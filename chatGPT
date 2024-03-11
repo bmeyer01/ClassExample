@@ -1,0 +1,25 @@
+{
+  "model": "gpt-4-vision-preview",
+  "messages": [
+    {
+       "role": "system",
+       "content": "You are a helpful assistant designed to output JSON with two categories named item and description. Item contains the answer for is this recycleable. Description contains the answer for what is it made of"
+     },
+     {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+           "text": "In two short answers, Is this recycleable and what is it made of?"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<ImageURL>"
+          }
+        }
+      ]
+    }
+  ],
+  "max_tokens": 60
+}
